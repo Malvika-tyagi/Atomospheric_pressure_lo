@@ -1,0 +1,32 @@
+# Way to Check
+
+Open Weather Map API Provides the hourly forcast for the next two days from today. 
+
+We can iterate over the 48 hour hourly pressure and get the Timestamp.
+
+Convert that timestamp into datetime format to check hours should be b/w 6am to 6pm.
+
+   -> To Do this we can convert the Timestamp into datetime format by using the Datetime
+      library which will return the Datetime Object and from there we can find out the 
+      hours we needed. If the Timestamp is between 6am to 6pm then we will consider that
+      pressure else we will not consider that pressure.
+      
+   -> We can send the Email for upto 2 days from today. 
+
+Now Use If else Statement to get check whether the pressure is below 995 millibar. 
+If yes then send a mail Using Python's SMTP Protocol. 
+
+SMTP is the Library which can be use to send the email, we can Make a function and call 
+that function if the Pressure is below 995 milibar then trigger that function to send the 
+email.
+
+## Library To Use
+1. SMTP
+2. Requests
+3. Time
+4. Datetime
+5. Json
+
+## API to Use
+1. OpenWeatherMap One call API.
+
